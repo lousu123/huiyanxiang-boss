@@ -78,6 +78,15 @@ td b{color:var(--green)}
 .tag{display:inline-block;font-size:12px;padding:1px 7px;border-radius:2px;background:var(--gold-soft);color:#7A5A17;white-space:nowrap}
 .tag.g{background:#E4EFE9;color:var(--green)}
 .tag.r{background:#F6E3DF;color:var(--red)}
+/* ---------- tight tables ---------- */
+table.tight{min-width:740px}
+table.tight th:nth-child(1),table.tight td:nth-child(1){white-space:nowrap;width:15%}
+table.tight th:nth-child(2){width:32%}
+table.tight th:nth-child(3){width:53%}
+table.tight.w4 th:nth-child(2){width:15%}
+table.tight.w4 th:nth-child(3){width:45%}
+table.tight.w4 th:nth-child(4){width:25%}
+@media (max-width:700px){table.tight{min-width:640px}}
 /* ---------- competitor table ---------- */
 table.comp th:nth-child(1){width:15%}
 table.comp th:nth-child(2){width:23%}
@@ -243,7 +252,7 @@ table.comp th,table.comp td{padding-top:14px;padding-bottom:14px}
     <p class="sec-sub">面积小不是短板，但排错了就是硬伤。下面五项决定一天能接多少人。</p>
 
     <div class="tw">
-      <table>
+      <table class="tight">
         <thead><tr><th>项目</th><th>建议</th><th>为什么这么定</th></tr></thead>
         <tbody>
           <tr><td><b>桌型</b></td><td>4 人桌为主（约一半），2 人桌为辅，留 1 张可拼 6 人</td><td>周边是社区和家庭客，一家三口、四口是主力；全是双人桌接不住家庭，全是四人桌单人客会觉得贵</td></tr>
@@ -258,6 +267,21 @@ table.comp th,table.comp td{padding-top:14px;padding-bottom:14px}
     <div class="callout">
       <b>一个被忽略的产能事实：</b>60–80㎡ 的店，厨房最多两个人转得开，前厅一个人收银加收拾。三个人加一个一岁半的孩子，实际可用人力是 <b>2.5 个成年人</b>。这意味着任何"全场打折""限时秒杀"都会把出餐打崩——宁可少接十桌，也别让一桌等二十分钟。
     </div>
+    <h3>人的精力，才是真瓶颈</h3>
+    <p>用"工位数"算产能是账面，用"精力"算才是现实。一家三口加一个一岁半的孩子，真正的风险不是某天客人多，而是某天有人病了、孩子闹了、情绪崩了，出餐就跟着崩。<b>所以产能要按"最差的一天"设计，不按"最好的一天"设计。</b></p>
+    <div class="tw">
+      <table>
+        <thead><tr><th>场景</th><th>现实情况</th><th>提前准备好的应对</th></tr></thead>
+        <tbody>
+          <tr><td><b>正常日</b></td><td>2.5 个成年人，高峰 90 分钟满负荷</td><td>菜单控制在 12 个 SKU 以内，出品动作越少越稳</td></tr>
+          <tr><td><b>孩子生病 / 闹觉</b></td><td>实际少一个人手</td><td>预备一张"简化菜单"：只出 3 款面 + 2 款粿，其余当日不卖</td></tr>
+          <tr><td><b>有人需要休息</b></td><td>无法两人同时守店</td><td>半成品提前备好，至少能撑半天，不要硬撑全天</td></tr>
+          <tr><td><b>连续忙一周</b></td><td>精力透支，出品开始飘</td><td>每周留半天闭店或只做外带，把节奏留出来</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="muted">这一节不是给老板泼冷水，是提前把"撑不住的时候怎么办"写好。能接受最差的一天，才敢谈 90 天。</p>
+
   </div>
 </section>
 
@@ -338,6 +362,15 @@ table.comp th,table.comp td{padding-top:14px;padding-bottom:14px}
         <span class="when">动作一 · 每天都在做</span>
         <h4>门口试吃：用一只粿解决"不敢进"</h4>
         <p>粿切成小块，小碟子摆在门口，免费尝。品类陌生的时候，试吃的转化率远高于任何一张海报——顾客尝过才知道"哦，原来是这个味道"。成本一天十几块，但能解决最贵的那个问题：没人敢推门。</p>
+        <div class="callout">
+          <b>门口试吃三句话（照读就行，别背专业词）：</b>
+          <ol>
+            <li><b>"粿是什么？"</b>——您吃过煎饺吧？皮换成米做的，煎得外脆里糯，比煎饺更香。</li>
+            <li><b>"多少钱？"</b>——6 块一只，配一碗面正好 24 块。</li>
+            <li><b>"第一次来吃啥？"</b>——浇头面加一只粿，这是我们的招牌组合。</li>
+          </ol>
+          <p style="margin:10px 0 0;font-size:14px;color:#6b5a2a">用"煎饺"做参照物，是因为天津人一听就懂；不要用"徽州挞粿"四个字开场，那是行家话，不是街坊话。</p>
+        </div>
       </div>
       <div class="step">
         <span class="when">动作二 · 每一单都在做</span>
@@ -352,7 +385,12 @@ table.comp th,table.comp td{padding-top:14px;padding-bottom:14px}
       <div class="step">
         <span class="when">动作四 · 每周一次</span>
         <h4>邻居联动：周边 300 米互相导流</h4>
-        <p>水果店、理发店、母婴店、快递驿站——这些店的老板和你是同一类人，聊两句就能互相放券。一张手写卡片放在对方收银台，比发 500 张传单有效。带着孩子去谈，成功率更高。</p>
+        <p>水果店、理发店、母婴店、快递驿站——这些店的老板和你是同一类人，聊两句就能互相放券。但"人情"撑不过三周，得有机制：</p>
+        <ul style="margin:8px 0 0;padding-left:20px;font-size:14.5px;color:#3B4C43">
+          <li><b>互惠规则</b>：你给邻居 10 张"邻居专属券"（凭券到店送一只粿）；邻居的客人用券后，邻居按 1 元/张 拿返点，或者换成你店里的餐券自己吃。</li>
+          <li><b>只维护 3 家</b>：不要铺 10 家。每家每周带来 2 桌就够，3 家就是一周 6 桌，一个月 24 桌。</li>
+          <li><b>一张纸记账</b>：券上写编号，月底一次性结算。别搞系统、别搞复杂规则，越简单越能持续。</li>
+        </ul>
       </div>
     </div>
 
@@ -434,17 +472,26 @@ table.comp th,table.comp td{padding-top:14px;padding-bottom:14px}
 <section id="p9">
   <div class="wrap">
     <div class="sec-head"><span class="sec-no">09</span><h2>90 天节奏：先跑通机制，再谈放量</h2></div>
-    <p class="sec-sub">每一阶段只解决一个问题，不要同时上五个动作。</p>
+    <p class="sec-sub">每一阶段只解决一个问题，不要同时上五个动作。前两周尤其要敢做减法。</p>
+
+    <div class="callout">
+      <b>前两周只死磕两件事，其余全部延后：</b>
+      <ol>
+        <li><b>出餐速度</b>——高峰期从点单到上桌不超过 10 分钟。这一条不通，后面所有动作都是白做。</li>
+        <li><b>第一批真实评价</b>——点评攒到 20 条，且回复每一条差评。评价是新店唯一的"线上地基"。</li>
+      </ol>
+      储值、社群、邻居联动、外卖、小红书，全部推到第三周再上。同时铺开的结果是每件事都做不透，最后一件都留不下。
+    </div>
 
     <div class="tw">
-      <table>
+      <table class="tight w4">
         <thead><tr><th>阶段</th><th>核心任务</th><th>具体动作</th><th>看什么数</th></tr></thead>
         <tbody>
           <tr><td><b>开业前 2 周</b></td><td>攒第一批人</td><td>围挡蓄客、扫街、内容预热、预售体验券</td><td>进群人数、预售份数</td></tr>
-          <tr><td><b>第 1–2 周</b></td><td>把体验做对</td><td>菜单三档上墙、门口试吃、扫码入会、点评前 20 条评价</td><td>入会率、出餐时长、差评数</td></tr>
-          <tr><td><b>第 3–6 周</b></td><td>把复购跑通</td><td>储值启动、集章卡、社群固定日、邻居联动</td><td>30 天复购率、储值笔数</td></tr>
-          <tr><td><b>第 7–10 周</b></td><td>把线上权重做起来</td><td>团购上架、评价过 50 条、外卖改品、小红书 20 条</td><td>评分、评价数、团购核销</td></tr>
-          <tr><td><b>第 11–13 周</b></td><td>复盘与取舍</td><td>算清四个数：复购、储值、外卖占比、单桌产出；决定要不要加投流</td><td>月度毛利、外卖占比是否 &lt;25%</td></tr>
+          <tr><td><b>第 1–2 周</b></td><td>只做两件事</td><td>菜单三档上墙 + 门口试吃；死磕出餐速度和点评前 20 条真实评价</td><td>高峰期出餐 ≤10 分钟、评价数、差评数</td></tr>
+          <tr><td><b>第 3–4 周</b></td><td>把复购机制装上</td><td>扫码入会稳定、储值启动、纸质集章卡上线</td><td>入会率、储值笔数</td></tr>
+          <tr><td><b>第 5–8 周</b></td><td>把熟客圈起来</td><td>社群固定日（每周一天）、邻居联动只做 3 家、团购上架</td><td>30 天复购率、团购核销</td></tr>
+          <tr><td><b>第 9–13 周</b></td><td>把线上权重做起来</td><td>评价过 50 条、外卖改品（生馄饨/冷冻粿）、小红书 20 条、决定是否加投流</td><td>评分、评价数、外卖占比是否 &lt;25%</td></tr>
         </tbody>
       </table>
     </div>
