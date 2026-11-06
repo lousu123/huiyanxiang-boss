@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>徽檐巷 浇头面·馄饨·粿的开业营销方案</title>
+<style>
+:root{
+  --green:#1F4B3F;
+  --green-2:#2E6B58;
+  --cream:#F7F4EC;
+  --paper:#FFFDF8;
+  --ink:#1B2620;
+  --muted:#5E6F66;
+  --line:#DDD6C6;
+  --gold:#B8892D;
+  --gold-soft:#F2E6CB;
+  --red:#A63B2A;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--cream);color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  font-size:16px;line-height:1.75;-webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+/* ---------- nav ---------- */
+.nav{position:sticky;top:0;z-index:50;background:rgba(31,75,63,.97);backdrop-filter:blur(6px);border-bottom:3px solid var(--gold)}
+.nav-in{max-width:1080px;margin:0 auto;padding:0 24px;display:flex;gap:6px;align-items:center;height:56px;overflow-x:auto;scrollbar-width:none}
+.nav-in::-webkit-scrollbar{display:none}
+.nav a{color:#E8EFE9;text-decoration:none;font-size:13px;padding:6px 10px;border-radius:999px;white-space:nowrap;opacity:.85}
+.nav a:hover{background:rgba(255,255,255,.12);opacity:1}
+/* ---------- hero ---------- */
+.hero{background:linear-gradient(160deg,#173A31 0%,#1F4B3F 55%,#2E6B58 100%);color:#fff;padding:56px 0 48px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-120px;top:-120px;width:380px;height:380px;border-radius:50%;background:radial-gradient(circle,rgba(184,137,45,.28),transparent 65%)}
+.hero .wrap{position:relative;z-index:2}
+.eyebrow{display:inline-block;font-size:12px;letter-spacing:.18em;color:var(--gold);border:1px solid rgba(184,137,45,.5);padding:4px 10px;border-radius:2px;margin-bottom:18px}
+h1{font-size:40px;line-height:1.25;margin:0 0 10px;font-weight:800;letter-spacing:.01em}
+.hero .sub{font-size:18px;opacity:.92;margin:0 0 6px}
+.hero .slogan{font-size:24px;color:#F3D9A4;font-weight:700;margin:14px 0 26px;letter-spacing:.02em}
+.meta{display:flex;flex-wrap:wrap;gap:10px 22px;font-size:14px;opacity:.9;border-top:1px solid rgba(255,255,255,.18);padding-top:18px}
+.meta span{white-space:nowrap}
+/* ---------- generic ---------- */
+section{padding:52px 0;border-bottom:1px solid var(--line)}
+section:last-of-type{border-bottom:none}
+.sec-head{display:flex;align-items:baseline;gap:14px;margin-bottom:8px}
+.sec-no{font-size:13px;color:var(--gold);font-weight:700;letter-spacing:.14em}
+h2{font-size:27px;line-height:1.35;margin:0;font-weight:800;color:var(--green)}
+.sec-sub{color:var(--muted);font-size:15px;margin:6px 0 26px}
+h3{font-size:19px;margin:34px 0 10px;color:var(--green);font-weight:700}
+h4{font-size:16px;margin:18px 0 6px;color:var(--ink)}
+p{margin:10px 0}
+.lead{font-size:17px}
+.muted{color:var(--muted)}
+.gold{color:var(--gold);font-weight:700}
+/* ---------- numbers ---------- */
+.nums{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:26px 0}
+.num{background:var(--paper);border:1px solid var(--line);border-top:3px solid var(--green);padding:20px 18px}
+.num b{display:block;font-size:24px;color:var(--green);line-height:1.25;margin-bottom:8px}
+.num span{font-size:13.5px;color:var(--muted);line-height:1.6}
+.num em{font-style:normal;display:block;font-size:12px;color:var(--gold);margin-top:8px;letter-spacing:.05em}
+/* ---------- callout ---------- */
+.callout{background:var(--gold-soft);border-left:4px solid var(--gold);padding:18px 22px;margin:24px 0}
+.callout b{color:#7A5A17}
+.callout ol{margin:10px 0 0;padding-left:22px}
+.callout li{margin:8px 0}
+.quote{background:var(--green);color:#fff;padding:26px 28px;margin:28px 0;border-radius:2px}
+.quote p{margin:0;font-size:17px;line-height:1.9}
+.quote .small{display:block;margin-top:12px;font-size:13px;opacity:.75}
+/* ---------- table ---------- */
+.tw{overflow-x:auto;margin:18px 0;border:1px solid var(--line);background:var(--paper)}
+table{width:100%;border-collapse:collapse;font-size:14.5px;min-width:560px}
+th,td{padding:12px 14px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:#EFEADD;color:var(--green);font-weight:700;font-size:13.5px;white-space:nowrap}
+tr:last-child td{border-bottom:none}
+td b{color:var(--green)}
+.tag{display:inline-block;font-size:12px;padding:1px 7px;border-radius:2px;background:var(--gold-soft);color:#7A5A17;white-space:nowrap}
+.tag.g{background:#E4EFE9;color:var(--green)}
+.tag.r{background:#F6E3DF;color:var(--red)}
+/* ---------- competitor table ---------- */
+table.comp th:nth-child(1){width:15%}
+table.comp th:nth-child(2){width:23%}
+table.comp th:nth-child(3){width:8%}
+table.comp th:nth-child(4){width:9%}
+table.comp th:nth-child(5){width:9%}
+table.comp th:nth-child(6){width:36%}
+table.comp td:nth-child(3),table.comp td:nth-child(4),table.comp td:nth-child(5){white-space:nowrap;text-align:center;padding-left:8px;padding-right:8px}
+table.comp td:nth-child(1){white-space:nowrap}
+table.comp th,table.comp td{padding-top:14px;padding-bottom:14px}
+@media (max-width:700px){
+  table.comp{min-width:660px}
+  table.comp td:nth-child(1){white-space:normal}
+}
+/* ---------- cards ---------- */
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin:22px 0}
+.card{background:var(--paper);border:1px solid var(--line);padding:20px 22px}
+.card h4{margin-top:0;display:flex;align-items:center;gap:8px}
+.card .dot{width:22px;height:22px;border-radius:50%;background:var(--green);color:#fff;font-size:12px;display:inline-flex;align-items:center;justify-content:center;flex:none}
+.card p{margin:8px 0 0;font-size:14.5px;color:#33443B}
+.card ul{margin:10px 0 0;padding-left:20px;font-size:14.5px;color:#33443B}
+.card li{margin:5px 0}
+/* ---------- steps ---------- */
+.steps{counter-reset:s;margin:22px 0}
+.step{position:relative;padding:0 0 22px 42px;border-left:2px solid #D9D2BF;margin-left:12px}
+.step:last-child{border-left-color:transparent;padding-bottom:0}
+.step::before{counter-increment:s;content:counter(s);position:absolute;left:-13px;top:0;width:24px;height:24px;border-radius:50%;background:var(--green);color:#fff;font-size:12.5px;display:flex;align-items:center;justify-content:center}
+.step h4{margin:0 0 4px;font-size:16.5px}
+.step p{margin:0;font-size:14.5px;color:#3B4C43}
+.step .when{font-size:12.5px;color:var(--gold);font-weight:700;letter-spacing:.06em}
+/* ---------- footer ---------- */
+.foot{background:#173A31;color:#DCE7E0;padding:40px 0;font-size:13.5px}
+.foot .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:flex-end}
+.foot b{color:#fff}
+.note{font-size:12.5px;color:#7A8A80;margin-top:18px;line-height:1.7}
+/* ---------- responsive ---------- */
+@media (max-width:900px){
+  .nums{grid-template-columns:repeat(2,1fr)}
+  .cards{grid-template-columns:1fr}
+  h1{font-size:30px}
+  .hero .slogan{font-size:20px}
+}
+@media (max-width:560px){
+  .wrap{padding:0 16px}
+  .nums{grid-template-columns:1fr}
+  section{padding:38px 0}
+  h2{font-size:22px}
+  table{min-width:520px;font-size:13.5px}
+}
+@media print{
+  .nav{display:none}
+  body{background:#fff;font-size:11.5pt}
+  section{padding:18px 0;page-break-inside:avoid}
+  .hero{padding:24px 0}
+  .tw{overflow:visible}
+  table{min-width:0}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-in">
+    <a href="#p1">一页看懂</a>
+    <a href="#p2">手里的牌</a>
+    <a href="#p3">小店怎么排</a>
+    <a href="#p4">周边竞争</a>
+    <a href="#p5">菜单价格</a>
+    <a href="#p6">线下四动作</a>
+    <a href="#p7">线上三渠道</a>
+    <a href="#p8">开业前14天</a>
+    <a href="#p9">90天节奏</a>
+    <a href="#p10">止损线</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="eyebrow">开业营销方案 · 2026</span>
+    <h1>徽檐巷 浇头面·馄饨·粿</h1>
+    <p class="sub">一家三口的小店，用一碗面把北塘的回头客做起来</p>
+    <p class="slogan">一碗浇头面，一只现做粿</p>
+    <div class="meta">
+      <span>📍 滨海新区北塘街道 安明路与丽水道交叉口东北 160 米</span>
+      <span>📂 餐饮 · 徽菜 / 面食小吃</span>
+      <span>🏪 约 60–80㎡ · 筹备中</span>
+      <span>🎯 核心目标：线下做复购，线上做权重</span>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ 一页看懂 ============ -->
+<section id="p1">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">01</span><h2>一页看懂：这家店的四个坐标</h2></div>
+    <p class="sec-sub">先把位置摆清楚，再谈怎么做。四个数字决定了这家店该怎么打。</p>
+
+    <div class="nums">
+      <div class="num"><b>0 分 · 0 条</b><span>点评上的起跑线。评价是绑门店的，跨城搬不过来，只能重开一局。</span><em>这是最容易超越对手的时候</em></div>
+      <div class="num"><b>7 家 · 北塘唯一</b><span>全滨海新区店名里带"粿"的只有 7 家，北塘片区就你一家。</span><em>品类壁垒，也是认知门槛</em></div>
+      <div class="num"><b>3.6–3.8 分 · 个位数评价</b><span>周边同类面食、馄饨店的线上水平：评分三点几，评价不到 20 条。</span><em>你只要做对，很容易排前面</em></div>
+      <div class="num"><b>60–80㎡ · 3 个大人</b><span>产能上限大约同时承接 20–25 人，忙时再多就得出餐事故。</span><em>不能追爆单，只能追复购</em></div>
+    </div>
+
+    <div class="callout">
+      <b>如果只看三件事：</b>
+      <ol>
+        <li><b>这个片区的对手线上都很弱。</b>3.6 分、9 条评价就能排在前面，点评是你最容易赢、也最该先赢的战场。</li>
+        <li><b>"粿"是别人没有的，但没人认识。</b>开业前必须先把"粿是什么、什么味道、多少钱"讲清楚，否则特色会变成劝退。</li>
+        <li><b>60–80㎡ 加一家三口，只能靠"一周来两次"。</b>靠爆单的店需要人手和后厨，你没有；靠复购的店只需要一套机制，你有。</li>
+      </ol>
+    </div>
+
+    <p class="lead">所以这份方案的骨架只有一句话：<span class="gold">线下把路过的人变成记得住的人，线上把搜附近的人变成先看到你。</span></p>
+  </div>
+</section>
+
+<!-- ============ 手里的牌 ============ -->
+<section id="p2">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">02</span><h2>您手里的牌：先把自己有的算清楚</h2></div>
+    <p class="sec-sub">很多老板觉得自己是"从零开始"，其实不是。您手里至少有四张牌。</p>
+
+    <div class="tw">
+      <table>
+        <thead><tr><th>手里的牌</th><th>具体是什么</th><th>怎么用</th></tr></thead>
+        <tbody>
+          <tr><td><b>品类</b></td><td>徽州浇头面 + 现包馄饨 + 挞粿，三件套组合</td><td>别人卖面只卖面，你有主食、有汤、有小吃，天然能组套餐、能拉客单</td></tr>
+          <tr><td><b>人</b></td><td>一家三口自己守店，安徽家庭做法</td><td>"一家人在店里"是最好的信任状，也是最好的内容素材，别人抄不走</td></tr>
+          <tr><td><b>内容手感</b></td><td>在北京做过手工生意，在小红书发过笔记，有粉丝基础</td><td>会拍、会写、知道怎么讲一件事——这是餐饮老板里最稀缺的能力</td></tr>
+          <tr><td><b>位置</b></td><td>街边，周边是一排小店，不是商场</td><td>租金可控、营业时间自由、邻居之间能互相导流，适合做"社区熟客"</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>但要承认一件事：手作的流量逻辑，和餐饮不是一套</h3>
+    <div class="cards">
+      <div class="card">
+        <h4><span class="dot">A</span>手作 / 内容平台</h4>
+        <p>靠内容分发。一条笔记爆了，来的是"看到你的人"，看完就划走，转化慢、复购靠缘分。</p>
+        <ul><li>投流是放大器，不是发动机</li><li>不花钱就没量，这是平台机制，不是你的问题</li><li>粉丝是"观众"，不是"客人"</li></ul>
+      </div>
+      <div class="card">
+        <h4><span class="dot">B</span>餐饮 / 本地生活</h4>
+        <p>靠"人找店"。中午想吃面，打开点评搜附近，谁在前面、谁评价多，就进谁家。</p>
+        <ul><li>这是确定性流量，不看运气看权重</li><li>评价数、评分、销量、核销，都是权重的组成部分</li><li>来的人本来就是"要吃饭的人"</li></ul>
+      </div>
+    </div>
+
+    <div class="quote">
+      <p>小红书给你的是"一次性打卡客"，点评给你的是"每天都在搜附近的刚需客"。<br>前者让店出名，后者让店活下去。小店要先活下去，再出名。</p>
+      <span class="small">——这段话可以直接讲给老板听，不用争平台好坏，只算两种客人的账</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 小店怎么排 ============ -->
+<section id="p3">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">03</span><h2>60–80㎡ 怎么排：小店的空间就是产能</h2></div>
+    <p class="sec-sub">面积小不是短板，但排错了就是硬伤。下面五项决定一天能接多少人。</p>
+
+    <div class="tw">
+      <table>
+        <thead><tr><th>项目</th><th>建议</th><th>为什么这么定</th></tr></thead>
+        <tbody>
+          <tr><td><b>桌型</b></td><td>4 人桌为主（约一半），2 人桌为辅，留 1 张可拼 6 人</td><td>周边是社区和家庭客，一家三口、四口是主力；全是双人桌接不住家庭，全是四人桌单人客会觉得贵</td></tr>
+          <tr><td><b>时段</b></td><td>午市 11:00–13:30，晚市 17:00–20:30，早餐可选项</td><td>面食是午市刚需；晚市靠家庭；早餐要看人手，孩子小的时候不建议硬上</td></tr>
+          <tr><td><b>出餐</b></td><td>面 3 分钟内、馄饨 2 分钟内、粿提前做好回炉 1 分钟</td><td>面食店翻台靠"快"，等餐超过 8 分钟，差评概率直线上升</td></tr>
+          <tr><td><b>动线</b></td><td>点餐 → 取餐 → 加料台 → 回收，四步不回头</td><td>小店最怕的不是没客人，是客人挤在收银台前面堵住出餐口</td></tr>
+          <tr><td><b>外带窗口</b></td><td>单独开一个窗口，卖生馄饨、冷冻粿、拌面半成品</td><td>这是外卖的真正解法：卖"带回家自己煮"的，不卖"送到手已经坨了"的</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout">
+      <b>一个被忽略的产能事实：</b>60–80㎡ 的店，厨房最多两个人转得开，前厅一个人收银加收拾。三个人加一个一岁半的孩子，实际可用人力是 <b>2.5 个成年人</b>。这意味着任何"全场打折""限时秒杀"都会把出餐打崩——宁可少接十桌，也别让一桌等二十分钟。
+    </div>
+  </div>
+</section>
+
+<!-- ============ 周边竞争 ============ -->
+<section id="p4">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">04</span><h2>周边竞争：这片区的线上水平，比你想的低</h2></div>
+    <p class="sec-sub">下表是从美团门店库里能查到的、北塘片区同品类门店的真实数据（采集于 2026-11-06，评分与评价数会随时间变化）。</p>
+
+    <div class="tw">
+      <table class="comp">
+        <thead><tr><th>门店</th><th>位置</th><th>评分</th><th>评价数</th><th>人均（元）</th><th>对我们的意义</th></tr></thead>
+        <tbody>
+          <tr><td><b>米线馄饨</b></td><td>海旭道与安明路交口东南 100 米</td><td>无评分</td><td>0</td><td>—</td><td><span class="tag r">最近的正面对手</span>同在安明路沿线，品类重叠，线上还是空白</td></tr>
+          <tr><td><b>顽皮馄饨铺</b></td><td>和旭路 276 号</td><td>3.6</td><td>9</td><td>19 元</td><td>已开业、有基础评价，但线上几乎没运营</td></tr>
+          <tr><td><b>吉祥馄饨（生态城万达店）</b></td><td>汇金广场</td><td>3.8</td><td>17</td><td>25 元</td><td>连锁品牌，价格带最高，是你的价格上限参照</td></tr>
+          <tr><td><b>山卡卡猪脚辣鸡粉面铺</b></td><td>生态城万达</td><td>3.6</td><td>9</td><td>20 元</td><td>商场店，人均和品类最接近，可作为定价锚点</td></tr>
+          <tr><td><b>大老姑早点</b></td><td>欣嘉园</td><td>3.7</td><td>8</td><td>13 元</td><td>社区早餐的价格底线，说明这一带对"贵"很敏感</td></tr>
+          <tr><td><b>板面 / 饸饹面（两家）</b></td><td>建投怡港荟</td><td>无评分</td><td>0</td><td>—</td><td>天津人认知里"安徽=板面"的来源，也是你要借势的对象</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>三个从数据里读出来的结论</h3>
+    <div class="steps">
+      <div class="step">
+        <h4>这片区没有一家把线上做明白</h4>
+        <p>评分集中在 3.6–3.8，评价数都是个位数到十几条。这意味着：<b>你只要做到 4.5 分以上、攒到 50 条真实评价，就能稳稳进片区第一梯队。</b>这不是砸钱能做到的，是把每一桌客人服务好就能做到的。</p>
+      </div>
+      <div class="step">
+        <h4>价格带很清楚：13–25 元是主流</h4>
+        <p>社区早餐 13 元、面食快餐 19–20 元、连锁馄饨 25 元。你的单碗面定在 16–20 元最稳，套餐定在 26–32 元，既高于板面、又不碰连锁的上限。</p>
+      </div>
+      <div class="step">
+        <h4>"粿"在滨海新区几乎是空白</h4>
+        <p>全滨海新区店名带"粿"的只有 7 家，北塘就你一家。<b>这是护城河，也是认知成本</b>——顾客不认识它，就不会为它进门。所以第一件事不是宣传"我们很正宗"，而是解释"粿是什么、怎么吃、多少钱"。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 菜单价格 ============ -->
+<section id="p5">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">05</span><h2>菜单与价格：让顾客站在门口就知道怎么点</h2></div>
+    <p class="sec-sub">小店的菜单不是"菜谱"，是"决策工具"。顾客在门口犹豫的那 10 秒，决定了他进不进来。</p>
+
+    <div class="tw">
+      <table>
+        <thead><tr><th>层级</th><th>占比</th><th>商品</th><th>建议价格</th><th>作用</th></tr></thead>
+        <tbody>
+          <tr><td><b>引流款</b></td><td>20%</td><td>小馄饨、单只粿</td><td>10–14 元 / 5–8 元</td><td>把第一次进店的门槛降到最低，让路人敢推门</td></tr>
+          <tr><td><b>主推款</b></td><td>50%</td><td>招牌浇头面、面 + 馄饨 + 粿套餐</td><td>面 16–20 元 / 套餐 26–32 元</td><td>贡献主要营收，也是顾客对"这家值多少钱"的判断依据</td></tr>
+          <tr><td><b>利润款</b></td><td>20%</td><td>加浇头、卤味小菜、饮品</td><td>3–8 元</td><td>不动主价、悄悄抬客单，面食店最有效的加购是"加个浇头"</td></tr>
+          <tr><td><b>形象款</b></td><td>10%</td><td>徽州特色组合（粿 + 汤 + 小菜）</td><td>按成本定价</td><td>撑住"这是家讲究的店"的认知，不指望它走量</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>菜单上必须出现的三句话</h3>
+    <div class="cards">
+      <div class="card"><h4><span class="dot">1</span>粿是什么</h4><p>"徽州挞粿：米皮包馅、现做现煎，外脆里糯。"——一句话解决认知，比任何形容词都有用。</p></div>
+      <div class="card"><h4><span class="dot">2</span>多少钱能吃饱</h4><p>"一碗面 18 元，加一只粿 6 元。"——直接给答案，不要让顾客自己算。</p></div>
+      <div class="card"><h4><span class="dot">3</span>第一次来点什么</h4><p>"第一次来，点浇头面 + 一只粿。"——给新手一个默认选项，转化率会明显不一样。</p></div>
+      <div class="card"><h4><span class="dot">4</span>招牌标记</h4><p>菜单上给 2–3 个菜打"招牌"标记，不要超过 3 个。全是招牌等于没有招牌。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 线下四动作 ============ -->
+<section id="p6">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">06</span><h2>线下四动作：把路过的人留下来</h2></div>
+    <p class="sec-sub">这四个动作都不需要花钱投广告，但需要老板每天做。小店的优势就是"人记得住人"。</p>
+
+    <div class="steps">
+      <div class="step">
+        <span class="when">动作一 · 每天都在做</span>
+        <h4>门口试吃：用一只粿解决"不敢进"</h4>
+        <p>粿切成小块，小碟子摆在门口，免费尝。品类陌生的时候，试吃的转化率远高于任何一张海报——顾客尝过才知道"哦，原来是这个味道"。成本一天十几块，但能解决最贵的那个问题：没人敢推门。</p>
+      </div>
+      <div class="step">
+        <span class="when">动作二 · 每一单都在做</span>
+        <h4>到店入会：送实物，不送券</h4>
+        <p>扫码点餐即入会，送一只粿或一份小菜。不要送"满 30 减 5"——券是打折，顾客会觉得你在清库存；实物是心意，顾客会觉得"这家店大方"。家庭店的人情味，就靠这个动作攒下来。</p>
+      </div>
+      <div class="step">
+        <span class="when">动作三 · 第一个月启动</span>
+        <h4>储值 + 集章：锁住第二次到店</h4>
+        <p>储值 100 送 15（或送 3 只粿），一次锁定三次到店，还能提前拿到现金——家庭小店最怕现金流紧，储值是唯一能"提前收钱"的工具。同时上纸质集章卡，吃满 5 次送 1 次，让不会用手机的老人也能参与。</p>
+      </div>
+      <div class="step">
+        <span class="when">动作四 · 每周一次</span>
+        <h4>邻居联动：周边 300 米互相导流</h4>
+        <p>水果店、理发店、母婴店、快递驿站——这些店的老板和你是同一类人，聊两句就能互相放券。一张手写卡片放在对方收银台，比发 500 张传单有效。带着孩子去谈，成功率更高。</p>
+      </div>
+    </div>
+
+    <div class="callout">
+      <b>社群怎么做才不死：</b>不做大群，按小区建 3 公里熟客群，一个群 100–200 人就够。每周固定一天做"群内专属"（比如周三馄饨日），让群有存在理由。<b>没有固定节奏的群，两周就死。</b>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 线上三渠道 ============ -->
+<section id="p7">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">07</span><h2>线上三渠道：点评是主战场，外卖要改品，小红书做认知</h2></div>
+    <p class="sec-sub">三个平台的逻辑完全不同，不能用一套打法。</p>
+
+    <h3>① 点评 / 美团：唯一"人找店"的确定性流量</h3>
+    <div class="tw">
+      <table>
+        <thead><tr><th>动作</th><th>具体怎么做</th><th>为什么重要</th></tr></thead>
+        <tbody>
+          <tr><td><b>门店页装修</b></td><td>头图放招牌面 + 粿的特写；商品分类清楚；营业时间和电话准确</td><td>顾客点进来 3 秒决定走不走，头图就是你的门头</td></tr>
+          <tr><td><b>前 50 条评价</b></td><td>买单时引导评价，不要求好评，只要求真实；差评当天回复</td><td>新店最贵的是"评价数"，50 条是分水岭</td></tr>
+          <tr><td><b>团购套餐</b></td><td>只上一个"双人尝鲜套餐"，价格贴着周边面馆，不做 9.9 引流款</td><td>60㎡ 的店扛不住爆单，低价团购会把你打崩</td></tr>
+          <tr><td><b>买单同步</b></td><td>线下买单数据同步到点评销量、评价自动同步</td><td>这是"数据滚雪球"的起点，越早开始越好</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>② 外卖：问题不在运营，在品类</h3>
+    <p>面、馄饨、粿都是不耐配送的品类，送到手就坨了、软了，复购天然低。所以外卖不应该是"把店里的菜单搬上去"，而是<b>换一批适合带走的商品</b>：</p>
+    <div class="cards">
+      <div class="card"><h4><span class="dot">✓</span>该卖的</h4><ul><li>生馄饨（回家自己煮，附煮法卡片）</li><li>冷冻粿（空气炸锅/平底锅复热）</li><li>浇头拌面半成品（面与浇头分开装）</li><li>午市 15 分钟自提套餐</li></ul></div>
+      <div class="card"><h4><span class="dot">✕</span>不该卖的</h4><ul><li>汤面（必坨）</li><li>带汤馄饨（配送 20 分钟就烂）</li><li>现煎粿（回软）</li><li>任何需要"出锅即食"的品</li></ul></div>
+    </div>
+    <p class="muted">外卖占比控制在 25% 以内。它是补充收入，不是主战场；主战场永远在店里。</p>
+
+    <h3>③ 小红书：把内容从"手作美学"换成"一碗面的日常"</h3>
+    <p>你们在北京做过内容，这是优势。但手作的内容是"好看"，餐饮的内容是"想吃"。三个能持续产出、且不依赖投流的选题方向：</p>
+    <div class="tw">
+      <table>
+        <thead><tr><th>选题</th><th>拍什么</th><th>为什么有效</th></tr></thead>
+        <tbody>
+          <tr><td><b>开店日记</b></td><td>为什么从北京回天津、房租多少、第一天卖了几碗、孩子几点睡</td><td>真实感，本地人爱看"身边人的故事"，也容易被同城推荐</td></tr>
+          <tr><td><b>手艺特写</b></td><td>粿怎么包、馄饨怎么捏、浇头怎么炒，15 秒一个动作</td><td>品类教育，看完就知道"这是什么、想不想吃"</td></tr>
+          <tr><td><b>家庭日常</b></td><td>一岁半的宝宝在店里、婆婆的手、夫妻俩的对话</td><td>情绪价值，是别人抄不走的内容资产</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="muted">频率：每周 2 条，先做 20 条测试。标题带"天津北塘"，让同城流量找得到你。不要一上来就想爆，先让 500 个本地人记住你。</p>
+  </div>
+</section>
+
+<!-- ============ 开业前14天 ============ -->
+<section id="p8">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">08</span><h2>开业前 14 天：施工期就是最好的蓄客期</h2></div>
+    <p class="sec-sub">开业前两周不投一分钱广告，先把周边三公里的第一批熟客攒够。开业当天只做三件事：入会、评价、拍素材。</p>
+
+    <div class="tw">
+      <table>
+        <thead><tr><th>时间</th><th>做什么</th><th>负责人</th><th>完成标准</th></tr></thead>
+        <tbody>
+          <tr><td><b>D-14 至 D-11</b></td><td>围挡贴二维码和"加微信，开业前 3 天免费试吃 20 份"；扫周边 300 米的小区、母婴店、理发店、水果店</td><td>老板</td><td>进群满 80 人，周边小店都谈过一轮</td></tr>
+          <tr><td><b>D-10 至 D-7</b></td><td>拍 3 条 15 秒素材：粿怎么包、面怎么出、一家人在店里；小红书和朋友圈同步发</td><td>老板娘</td><td>3 条发完，至少 1 条播放过 500</td></tr>
+          <tr><td><b>D-6 至 D-3</b></td><td>群里发"9.9 元预约开业套餐、到店抵 15 元"，限量 50 份；门店页和团购搭好</td><td>老板 + 运营</td><td>预售满 30 份，门店页与套餐全部上线</td></tr>
+          <tr><td><b>D-2 至 D-1</b></td><td>按半小时分时段预约；三个人分工固定：一人出餐、一人收银引导、一人拍素材</td><td>老板</td><td>每个时段有预约名单，分工上墙</td></tr>
+          <tr><td><b>D1 开业当天</b></td><td>只做三件事：扫码点餐入会送粿、买单引导评价、全程拍素材</td><td>全家</td><td>入会率 ≥70%，当天评价 ≥20 条</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout">
+      <b>为什么开业不能搞"全场半价"：</b>60㎡ 三个人，接待能力有上限。半价会把你最不想要的客人（只来占便宜的）一次性全招来，把出餐打崩、把第一批评价做烂。开业要的是"慢一点、稳一点、每个人都记住你"，不是"一天卖爆"。
+    </div>
+  </div>
+</section>
+
+<!-- ============ 90天 ============ -->
+<section id="p9">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">09</span><h2>90 天节奏：先跑通机制，再谈放量</h2></div>
+    <p class="sec-sub">每一阶段只解决一个问题，不要同时上五个动作。</p>
+
+    <div class="tw">
+      <table>
+        <thead><tr><th>阶段</th><th>核心任务</th><th>具体动作</th><th>看什么数</th></tr></thead>
+        <tbody>
+          <tr><td><b>开业前 2 周</b></td><td>攒第一批人</td><td>围挡蓄客、扫街、内容预热、预售体验券</td><td>进群人数、预售份数</td></tr>
+          <tr><td><b>第 1–2 周</b></td><td>把体验做对</td><td>菜单三档上墙、门口试吃、扫码入会、点评前 20 条评价</td><td>入会率、出餐时长、差评数</td></tr>
+          <tr><td><b>第 3–6 周</b></td><td>把复购跑通</td><td>储值启动、集章卡、社群固定日、邻居联动</td><td>30 天复购率、储值笔数</td></tr>
+          <tr><td><b>第 7–10 周</b></td><td>把线上权重做起来</td><td>团购上架、评价过 50 条、外卖改品、小红书 20 条</td><td>评分、评价数、团购核销</td></tr>
+          <tr><td><b>第 11–13 周</b></td><td>复盘与取舍</td><td>算清四个数：复购、储值、外卖占比、单桌产出；决定要不要加投流</td><td>月度毛利、外卖占比是否 &lt;25%</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="quote">
+      <p>90 天之内不要问"能不能火"，只问三个问题：<br>来过的人有没有再来？来的人都记住粿了吗？搜附近的时候能不能看到我们？</p>
+      <span class="small">——这三个问题有答案，生意就会自己长；没有答案，投再多钱也是买一次热闹</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 止损线 ============ -->
+<section id="p10">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">10</span><h2>投入与止损：什么钱该花，什么钱先别花</h2></div>
+    <p class="sec-sub">小店最怕的不是不投入，是把有限的钱花在了看不见效果的地方。</p>
+
+    <div class="tw">
+      <table>
+        <thead><tr><th>项目</th><th>建议</th><th>判断标准</th></tr></thead>
+        <tbody>
+          <tr><td><b>投流广告</b></td><td>前 30 天不投</td><td>等点评评价过 30 条、复购有数据了，再决定要不要放大</td></tr>
+          <tr><td><b>长期代运营</b></td><td>不做全托管，只做启动校准</td><td>先看一个月数据，能自己跑起来就不用长期外包</td></tr>
+          <tr><td><b>低价团购</b></td><td>不做 9.9 引流款</td><td>产能扛不住，低价客复购低，容易把口碑做坏</td></tr>
+          <tr><td><b>系统</b></td><td>优先扫码点餐入会 + 买单同步 + 会员标签</td><td>能把人留住、能把数据同步到点评，这三件事手工做不了</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>三条止损线（到了就停下来复盘）</h3>
+    <div class="cards">
+      <div class="card"><h4><span class="dot">1</span>出餐时间</h4><p>高峰期等餐超过 15 分钟，先停一切拉新动作。出餐跟不上，来的客人会变成差评。</p></div>
+      <div class="card"><h4><span class="dot">2</span>评分</h4><p>评分掉到 4.0 以下，先停下所有活动，逐条回复差评、找出问题。评分是复利，掉下去很难拉回来。</p></div>
+      <div class="card"><h4><span class="dot">3</span>复购</h4><p>30 天复购率低于 20%，说明产品或价格有问题，不要加大投放，先改产品。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 收尾 ============ -->
+<section id="p11">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">11</span><h2>给老板的三句话</h2></div>
+    <div class="quote">
+      <p>第一句：您在北京输的不是手艺，是流量通道。<br>
+      第二句：这家店不需要全网都知道您，只需要周边三公里有两千人记得您。<br>
+      第三句：先把每一桌客人服务到愿意再来，剩下的交给机制。</p>
+    </div>
+
+    <h3>需要老板配合的五件事</h3>
+    <div class="steps">
+      <div class="step"><h4>把菜单定成三档</h4><p>让人站在门口就知道 20 块能吃饱、35 块能吃好。</p></div>
+      <div class="step"><h4>每天门口试吃</h4><p>一只粿切八块，成本一天十几块，解决"不敢进"。</p></div>
+      <div class="step"><h4>每一单都引导入会</h4><p>送实物不送券，把客人装进自己的池子。</p></div>
+      <div class="step"><h4>开业前两周开始蓄客</h4><p>围挡、扫街、社群，比开业后买流量便宜十倍。</p></div>
+      <div class="step"><h4>把内容拍起来</h4><p>你们本来就会拍，只是要把镜头从"手作"转向"一碗面"。</p></div>
+    </div>
+
+    <p class="note">数据说明：本方案中的周边竞品评分、评价数、人均消费，来自美团门店库可查数据（采集时间 2026-11-06），会随时间变化，仅作决策参考，不构成效果承诺。方案中所有价格建议均为结构性建议，最终定价请结合食材成本和实际经营情况确定。</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div>
+      <b>徽檐巷 浇头面·馄饨·粿</b><br>
+      开业营销方案 · 滨海新区北塘街道
+    </div>
+    <div>美团餐饮系统 · 助力门店经营增长</div>
+  </div>
+</footer>
+
+</body>
+</html>
